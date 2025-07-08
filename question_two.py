@@ -1624,3 +1624,90 @@ if coursework_score >= 35:
 else:
     print(f"Sorry, you are not qualified to sit foe the Exams")    
 
+
+
+
+import tkinter as tk
+from tkinter import messagebox
+
+def check_age():
+    try:
+        age = int(age_entry.get())
+        if age >= 18:
+            result = "You are eligible to vote!"
+        else:
+            result = "You are NOT eligible to vote."
+        messagebox.showinfo("Voting Eligibility", result)
+    except ValueError:
+        messagebox.showerror("Invalid Input", "Please enter a valid age.")
+
+# GUI setup
+root = tk.Tk()
+root.title("Voting Eligibility Checker")
+
+tk.Label(root, text="Enter your age:").pack(pady=10)
+age_entry = tk.Entry(root)
+age_entry.pack(pady=5)
+
+tk.Button(root, text="Check Eligibility", command=check_age).pack(pady=10)
+
+root.mainloop()
+
+
+
+
+import tkinter as tk
+from tkinter import messagebox
+
+def check_age():
+    try:
+        age = int(age_entry.get())
+        if age >= 18:
+            result = "You are eligible to vote!"
+        else:
+            result = "You are NOT eligible to vote."
+        messagebox.showinfo("Voting Eligibility", result)
+    except ValueError:
+        messagebox.showerror("Invalid Input", "Please enter a valid age.")
+
+# GUI setup
+root = tk.Tk()
+root.title("Voting Eligibility Checker")
+
+tk.Label(root, text="Enter your age:").pack(pady=10)
+age_entry = tk.Entry(root)
+age_entry.pack(pady=5)
+
+tk.Button(root, text="Check Eligibility", command=check_age).pack(pady=10)
+
+root.mainloop()
+
+
+
+
+import tkinter as tk
+from tkinter import messagebox
+
+def check_age():
+    try:
+        age = int(age_entry.get())
+        if age >= 18:
+            result = "You are eligible to vote!"
+        else:
+            result = "You are NOT eligible to vote."
+        messagebox.showinfo("Voting Eligibility", result)
+    except ValueError:
+        messagebox.showerror("Invalid Input", "Please enter a valid age.")
+
+# GUI setup
+root = tk.Tk()
+root.title("Voting Eligibility Checker")
+
+tk.Label(root, text="Enter your age:").pack(pady=10)
+age_entry = tk.Entry(root)
+age_entry.pack(pady=5)
+
+tk.Button(root, text="Check Eligibility", command=check_age).pack(pady=10)
+
+root.mainloop()
+
