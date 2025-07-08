@@ -1,4 +1,28 @@
-# Exam Verification program
+import tkinter as tk
+from tkinter import messagebox
+
+def check_age():
+    try:
+        age = int(age_entry.get())
+        if age >= 18:
+            result = "You are eligible to vote!"
+        else:
+            result = "You are NOT eligible to vote."
+        messagebox.showinfo("Voting Eligibility", result)
+    except ValueError:
+        messagebox.showerror("Invalid Input", "Please enter a valid age.")
+
+# GUI setup
+root = tk.Tk()
+root.title("Voting Eligibility Checker")
+
+tk.Label(root, text="Enter your age:").pack(pady=10)
+age_entry = tk.Entry(root)
+age_entry.pack(pady=5)
+
+tk.Button(root, text="Check Eligibility", command=check_age).pack(pady=10)
+
+root.mainloop()# Exam Verification program
 # get values from 4 assignments and store them in a list
 
 ass_1 = int(input("Enter marks for assingment 1: "))
